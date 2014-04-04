@@ -77,3 +77,10 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:startify_bookmarks = ['~/.vim/vimrc']
+
+let g:startify_custom_footer =
+      \ ['', "   Vim is charityware. Please read ':help uganda'.", '']
