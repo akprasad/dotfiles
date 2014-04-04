@@ -7,3 +7,6 @@
 [submodule "bundle/vim-jinja"]
 	path = bundle/vim-jinja
 	url = git://github.com/mitsuhiko/vim-jinja.git
+[submodule "bundle/html5"]
+	path = bundle/html5
+	url = git://github.com/othree/html5.vim.git
