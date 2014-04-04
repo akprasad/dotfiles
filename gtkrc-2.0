@@ -1,5 +1,5 @@
 # When gvim is maximized, it uses as much space as possible. If (dimension
-# modulo block size) 1= 0, gtk fills with a default color. In my case, it was
+# modulo block size) != 0, gtk fills with a default color. In my case, it was
 # white.
 #
 # This fix "hides" the white fill by setting it to gvim's background color.
