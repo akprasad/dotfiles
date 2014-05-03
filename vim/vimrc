@@ -68,7 +68,7 @@ set hlsearch
 set wrap
 set textwidth=79
 " TODO: formatoptions
-set colorcolumn=85
+set colorcolumn=81
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Remapping
