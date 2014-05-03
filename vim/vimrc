@@ -76,6 +76,11 @@ set colorcolumn=81
 let mapleader = ","
 nnoremap <Leader>w :update<CR>
 
+nnoremap <c-h> <c-W>h
+nnoremap <c-j> <c-W>j
+nnoremap <c-k> <c-W>k
+nnoremap <c-l> <c-W>l
+
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
