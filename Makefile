@@ -1,7 +1,9 @@
 install-vim:
-	rm -rf ~/.vim ~/.vimrc
+	rm -rf ~/.vim ~/.vimrc ~/.gvimrc
 	ln -s `pwd`/vim ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
+	ln -s ~/.vim/gvimrc ~/.gvimrc
+	ln -s ~/.vim/gtkrc-2.0 ~/.gtkrc-2.0
 	mkdir -p ~/.vim/autoload ~/.vim/bundle
 	curl -LSso ~/.vim/autoload/pathogen.vim \
 		https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
