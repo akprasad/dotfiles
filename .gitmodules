@@ -1,12 +1,12 @@
-[submodule "bundle/command-t"]
-	path = bundle/command-t
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/vim-startify"]
-	path = bundle/vim-startify
+[submodule "vim/bundle/vim-startify"]
+	path = vim/bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify
-[submodule "bundle/vim-jinja"]
-	path = bundle/vim-jinja
+[submodule "vim/bundle/vim-jinja"]
+    path = vim/bundle/vim-jinja
 	url = git://github.com/mitsuhiko/vim-jinja.git
-[submodule "bundle/html5"]
-	path = bundle/html5
+[submodule "vim/bundle/html5"]
+    path = vim/bundle/html5
 	url = git://github.com/othree/html5.vim.git
