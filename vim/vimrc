@@ -74,6 +74,7 @@ set colorcolumn=85
 " Remapping
 """"""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
+nnoremap <Leader>w :update<CR>
 
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
