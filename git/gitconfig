@@ -1,14 +1,17 @@
 [alias]
     a = add
+    amend = commit --amend
     au = add -u
     b = branch
     ci = commit
     co = checkout
     d = diff
     dc = diff --cached
+    drop = stash drop
+    last = log -n 1
+    pop = stash pop
+    r = reset
     s = status --short
     st = stash
     tree = log --graph --oneline --all --decorate
-    pop = stash pop
-    last = log -n 1
 
