@@ -39,6 +39,8 @@ set ruler                        " show current line and column
 set showcmd                      " show the current command
 set showmode                     " show the current mode
 
+set noswapfile
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Search
 """"""""""""""""""""""""""""""""""""""""""""""""""
