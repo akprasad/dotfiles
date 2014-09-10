@@ -15,3 +15,8 @@
     st = stash
     tree = log --graph --oneline --all --decorate
 
+[user]
+	email = akprasad.public@gmail.com
+	name = Arun Prasad
+[push]
+	default = simple
