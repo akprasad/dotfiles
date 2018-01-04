@@ -11,6 +11,7 @@
     last = log -n 1
     pop = stash pop
     r = reset
+    rh = reset HEAD
     s = status
     st = stash
     tree = log --graph --oneline --all --decorate

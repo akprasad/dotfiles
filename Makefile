@@ -1,16 +1,34 @@
-install-vim:
-	sudo apt-get install curl vim
-	rm -rf ~/.vim ~/.vimrc ~/.gvimrc ~/.gtkrc-2.0
-	ln -s `pwd`/vim ~/.vim
-	ln -s ~/.vim/vimrc ~/.vimrc
-	ln -s ~/.vim/gvimrc ~/.gvimrc
-	ln -s ~/.vim/gtkrc-2.0 ~/.gtkrc-2.0
-	mkdir -p ~/.vim/autoload ~/.vim/bundle
-	curl -LSso ~/.vim/autoload/pathogen.vim \
-		https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-	cd ~/.vim && git submodule init && git submodule update
+bash-clean:
+	rm -rf ~/.bashrc ~/.bash_aliases
 
-install-git:
-	sudo apt-get install git
+bash-install:
+	ln -s `pwd`/bash_aliases ~/.bash_aliases
+	ln -s `pwd`/bashrc ~/.bashrc
+	source ~/.bashrc
+
+git-clean:
 	rm -rf ~/.gitconfig
-	ln -s `pwd`/git/gitconfig ~/.gitconfig
+
+git-install:
+	rm -rf ~/.gitconfig
+	ln -s `pwd`/gitconfig ~/.gitconfig
+
+vim-clean:
+	rm -rf ~/.vim ~/.vimrc ~/.gvimrc ~/.gtkrc-2.0
+
+vim-install:
+	ln -s `pwd`/vimrc ~/.vimrc
+	ln -s `pwd`/gvimrc ~/.gvimrc
+	ln -s `pwd`/gtkrc-2.0 ~/.gtkrc-2.0
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	vim +PluginInstall +qall
+
+clean:
+	make bash-clean
+	make git-clean
+	make vim-clean
+
+install:
+	make bash-install
+	make git-install
+	make vim-install
